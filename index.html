@@ -252,6 +252,8 @@ Dazzle Unicase Bold*/
     height: 100%;
     text-align: center;
     line-height: 1;
+    background-color: white;
+    cursor: pointer;
 }
 .title{
     font-size: 10vw;
@@ -299,6 +301,15 @@ Dazzle Unicase Bold*/
     height: 10vh;
     top: 20vh;
 filter: invert(1);}
+.arrow:hover{
+    filter: invert(0);
+}
+.artistname:hover{
+filter: invert(1);
+}
+.bar_wrap:hover{
+filter: invert(1);
+}
 .arrow_r{
     right: 0;}
     .arrow_l{
@@ -312,6 +323,10 @@ filter: invert(1);}
     width: 5vh;
     top: 1vh;
     right: 1vh;
+    cursor: pointer;
+}
+.close:hover{
+    filter: invert(1);
 }
 .popup_title{
     font-size: 5vh;
@@ -425,26 +440,49 @@ The File is a stack of technical documentation about itself. It begins as a disc
         var scroll_counter = 0
 $('.sidetop').append('\
     <div class="artistname_wrap">\
-        <div class="artistname">Rimbawan Gerilya</div>\
+        <div class="artistname artistname_1">Rimbawan Gerilya</div>\
         <div class="artistname artistname_2">American Artist</div>\
         <div class="artistname artistname_3">Ryan Kuo</div>\
-        <div class="artistname">Or Zubalsky</div>\
-        <div class="artistname">Ryan Clarke</div>\
-        <div class="artistname">Tiri Kananuruk and Sebastian Morales Prado</div>\
-        <div class="artistname">Jen Liu</div>\
-        <div class="artistname">Alice Yuan Zhang</div>\
-        <div class="artistname">Herdimas Anggara</div>\
-        <div class="artistname">Chia Amisola</div>\
-        <div class="artistname">Ho Rui An</div>\
-        <div class="artistname">Bani Haykal</div>\
-        <div class="artistname">Samson Young</div>\
-        <div class="artistname">Tega Brain</div>\
+        <div class="artistname artistname_4">Or Zubalsky</div>\
+        <div class="artistname artistname_5">Ryan Clarke</div>\
+        <div class="artistname artistname_6">Tiri Kananuruk and Sebastian Morales Prado</div>\
+        <div class="artistname artistname_7">Jen Liu</div>\
+        <div class="artistname artistname_8">Alice Yuan Zhang</div>\
+        <div class="artistname artistname_9">Herdimas Anggara</div>\
+        <div class="artistname artistname_10">Chia Amisola</div>\
+        <div class="artistname artistname_11">Ho Rui An</div>\
+        <div class="artistname artistname_12">Bani Haykal</div>\
+        <div class="artistname artistname_13">Samson Young</div>\
+        <div class="artistname artistname_14">Tega Brain</div>\
     </div>\
     ')
-        $('.artistname_2').click(function(){
-            $('.popup_2').show()
-            console.log('!!!')
-        })
+        $('.side_1 .bar_wrap').click( function(){$('.popup_3').show()})
+        $('.side_2 .bar_wrap').click( function(){$('.popup_2').show()})
+        $('.side_3 .bar_wrap').click( function(){$('.popup_3').show()})
+        $('.side_4 .bar_wrap').click( function(){$('.popup_2').show()})
+        $('.side_5 .bar_wrap').click( function(){$('.popup_3').show()})
+        $('.side_6 .bar_wrap').click( function(){$('.popup_2').show()})
+        $('.side_7 .bar_wrap').click( function(){$('.popup_3').show()})
+        $('.side_8 .bar_wrap').click( function(){$('.popup_2').show()})
+        $('.side_9 .bar_wrap').click( function(){$('.popup_3').show()})
+        $('.side_10 .bar_wrap').click(function(){$('.popup_2').show()})
+        $('.side_11 .bar_wrap').click(function(){$('.popup_3').show()})
+        $('.side_12 .bar_wrap').click(function(){$('.popup_2').show()})
+        $('.side_13 .bar_wrap').click(function(){$('.popup_3').show()})
+        $('.side_14 .bar_wrap').click(function(){$('.popup_2').show()})
+        $('.artistname_1').click(function(){ $('.popup_3').show()})
+        $('.artistname_2').click(function(){ $('.popup_2').show()})
+        $('.artistname_4').click(function(){ $('.popup_2').show()})
+        $('.artistname_5').click(function(){ $('.popup_3').show()})
+        $('.artistname_6').click(function(){ $('.popup_2').show()})
+        $('.artistname_7').click(function(){ $('.popup_3').show()})
+        $('.artistname_8').click(function(){ $('.popup_2').show()})
+        $('.artistname_9').click(function(){ $('.popup_2').show()})
+        $('.artistname_10').click(function(){$('.popup_3').show()})
+        $('.artistname_11').click(function(){$('.popup_2').show()})
+        $('.artistname_12').click(function(){$('.popup_3').show()})
+        $('.artistname_13').click(function(){$('.popup_2').show()})
+        $('.artistname_14').click(function(){$('.popup_3').show()})
         $('.artistname_3').click(function(){
             $('.popup_3').show()
             console.log('!!!')
